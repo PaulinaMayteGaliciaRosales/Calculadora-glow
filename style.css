@@ -2,11 +2,11 @@
 /* === ESTILOS PERSONALIZADOS Y MEDIA QUERIES === */
 /* ========================================= */
 :root {
-    --color-primary: #004481; /* Azul corporativo */
-    --color-accent: #ffbb00; /* Amarillo/Naranja de énfasis */
+    --color-primary: #2d2d2d; /* Azul corporativo */
+    --color-accent: #fff718; /* Amarillo/Naranja de énfasis */
     --color-dark: #263238;
-    --color-success: #28a745; /* Verde claro para "good" */
-    --color-warning: #fd7e14; /* Naranja para "warning" */
+    --color-success: #a6fa75; /* Verde claro para "good" */
+    --color-warning: #00e1ff; /* Naranja para "warning" */
     --color-danger: #dc3545; /* Rojo para "danger" */
     --color-bg: #f8f9fa; /* Fondo muy neutro y limpio */
 }
@@ -37,7 +37,7 @@ body {
 
 /* Tarjeta Principal */
 .calculator-card {
-    background-color: #ffffff;
+    background-color: #fefcfc;
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -59,7 +59,7 @@ body {
 .form-control {
     border-radius: 8px;
     padding: 12px;
-    border: 1px solid #ced4da;
+    border: 1px solid #82c0ff;
     transition: border-color 0.3s;
 }
 .form-control:focus {
@@ -78,7 +78,7 @@ body {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-calculate:hover {
-    background-color: #ffd24d; /* Un tono un poco más claro al hacer hover */
+    background-color: #8bc5ff; /* Un tono un poco más claro al hacer hover */
     color: var(--color-primary);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 187, 0, 0.4);
@@ -112,3 +112,44 @@ body {
         font-size: 2rem; /* Texto más pequeño en móvil */
     }
 }
+
+#main-footer {
+  background: var(--color-primary);
+  color:white;
+  text-align:center;
+  padding: 10px;
+  margin-top:auto;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; /*  quita el subrayado si no te gusta */
+    /*font-weight: bold; /*Opcional: lo hace un poco más gordito para leerse mejor */
+}
+
+#autor{
+  margin: 0.2rem;
+  color:white;
+  text-decoration: none;
+}
+
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  color: var(--color-primary);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+} 
